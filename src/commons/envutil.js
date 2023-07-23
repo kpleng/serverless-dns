@@ -105,9 +105,7 @@ export function primaryDohResolver() {
 }
 
 export function secondaryDohResolver() {
-  if (!envManager) return null;
-
-  return envManager.get("CF_DNS_RESOLVER_URL_2");
+  return null;
 }
 
 export function cfAccountId() {
@@ -123,8 +121,7 @@ export function cfApiToken() {
 }
 
 export function maxDohUrl() {
-  if (!envManager) return null;
-  return envManager.get("MAX_DNS_RESOLVER_URL");
+  return null;
 }
 
 export function dohResolvers() {
